@@ -1,19 +1,16 @@
 
-const generateUsers = () =>
-  [...Array(50)].map(() => {
-    const lastName = 'Murray'
-    const bird = 'Blue Jay'
-    return {
-      avatar: `https://avatars.dicebear.com/api/human/${lastName}.svg`,
-      lastName,
-      bird
-    };
-  });
+const fetchKantoPokemon = async () => {
+    const data = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+    console.log('hit')
+    const pokemons = await data.json()
+    console.log({res: pokemons.results})
+    return pokemons.results
+}
 
 export async function get() {
   return {
     body: {
-        users: generateUsers()
+        pokemons: await fetchKantoPokemon()
     },
   };
 }

@@ -1,14 +1,15 @@
 <script>
-	import ProductCard from '../components/ProductCard.svelte';
-	export let users;
+import ProductCard from "../components/ProductCard.svelte";
+
+
+	export let pokemons;
+    console.log(pokemons)
 </script>
 
 <div>
 	<main>
-		{#each users as { avatar, lastName, bird }}
-			<a href={`/${lastName}`} class="box">
-				<ProductCard author={lastName} title={bird} avatar={avatar} />
-			</a>
+		{#each pokemons as pokemon}
+			<ProductCard title={pokemon.name} author={pokemon.url} avatar="http://placekitten.com/200/300" />
 		{/each}
 	</main>
 </div>
