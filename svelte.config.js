@@ -7,7 +7,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: vercel()
+		adapter: vercel({config: { default: true }})
 	}
 };
 
