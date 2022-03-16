@@ -1,6 +1,8 @@
 <script>
-    import { page } from '$app/stores';
+	import { page } from '$app/stores';
+	import ProductCard from '../components/ProductCard.svelte';
 </script>
+
 <div>
-    {$page.params.id}
+	<ProductCard author="David" title={$page.params.id} />
 </div>
