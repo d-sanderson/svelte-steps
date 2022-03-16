@@ -1,6 +1,7 @@
 <script>
 	export let title;
 	export let author;
+	export let avatar;
 </script>
 
 <!-- MDI Icons -->
@@ -18,7 +19,7 @@
 			<!-- Thumbnail -->
 			<img
 				class="absolute rounded-t object-cover h-full w-full"
-				src="https://images.unsplash.com/photo-1627384113858-ce93ff568d1f?auto=format&fit=crop&w=1170&q=80"
+				src={avatar}
 				alt="Product Preview"
 			/>
 

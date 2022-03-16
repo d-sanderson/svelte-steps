@@ -33,6 +33,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@faker-js/faker": "^6.0.0",
     "@xstate/svelte": "^0.2.1",
     "xstate": "^4.30.6"
   }
