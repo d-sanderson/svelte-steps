@@ -32,5 +32,8 @@
     "typescript": "~4.6.2"
   },
   "type": "module",
-  "dependencies": {}
+  "dependencies": {
+    "@xstate/svelte": "^0.2.1",
+    "xstate": "^4.30.6"
+  }
 }
