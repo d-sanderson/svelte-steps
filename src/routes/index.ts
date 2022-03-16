@@ -13,6 +13,8 @@ const generateUsers = () =>
 
 export async function get() {
   return {
-    body: generateUsers(),
+    body: {
+        users: generateUsers()
+    },
   };
 }
